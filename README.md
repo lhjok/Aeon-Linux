@@ -55,7 +55,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 $ sudo transactional-update dup
 $ sudo transactional-update pkg install cmake gcc-c++ clang clang-devel git \
 python311-pipx libgccjit0 libvterm0 libopenssl-3-devel libvterm-devel gtk3-devel \
-libXpresent1 wl-clipboard ruby sqlite3-devel host-spawn fish
+wl-clipboard ruby sqlite3-devel host-spawn fish
 ```
 
 - 系统个人偏好设置：
