@@ -53,7 +53,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 ```sh
 # 更新整个系统和安装常用工具
 $ sudo transactional-update dup
-$ sudo transactional-update pkg install cmake gcc-c++ clang clang-devel git aria2 \
+$ sudo transactional-update pkg install cmake gcc-c++ clang clang-devel git \
 python311-pipx libgccjit0 libvterm0 libopenssl-3-devel libvterm-devel gtk3-devel \
 libXpresent1 wl-clipboard ruby sqlite3-devel host-spawn fish
 ```
@@ -154,10 +154,8 @@ $ flatpak --user override com.valvesoftware.Steam --filesystem=/home/lhjok/.opt/
 - 编辑 `sudo vim /etc/profile` 设置输入法（默认可不用设置）：
 
 ```sh
-podman start qn_mysql
-podman start qn_postgres
 podman start qn_redis
-aria2c --enable-rpc --rpc-listen-port=6800 &
+podman start qn_postgres
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
